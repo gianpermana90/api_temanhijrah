@@ -1,0 +1,1006 @@
+{
+	"info": {
+		"name": "Teman-Hijrah",
+		"_postman_id": "0b27321b-cd30-40c6-43e0-cb3b4effb72c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER - Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "satria",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "satria",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "pangestu",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "02-03-2000",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "laki-laki",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "satriapangestu@email.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081232343456",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "QWEqwe123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "satria",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "QWEqwe123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "syamfikry",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Syam",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Fikry",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "02-03-2000",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "laki-laki",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081283838484",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "syamfikry@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "QWEqwe123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/updateUser/{insert-user-id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateUser",
+						"{insert-user-id}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getUser/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getUser",
+						""
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Upload Image Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/uploadImageProfile/{insert-user-id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"uploadImageProfile",
+						"{insert-user-id}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deleteUser/{Insert ID User}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteUser",
+						"{Insert ID User}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Ganti Password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "yyQFZIQwB9yc",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "QWEqwe123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "accessToken",
+							"value": "6DOCBAytzOhy",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/gantiPassword/{Insert User ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"gantiPassword",
+						"{Insert User ID}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Lupa Password",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/lupaPassword/{Insert User Email}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"lupaPassword",
+						"{Insert User Email}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "USER - Reset Password",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/resetPassword/{Insert User ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"resetPassword",
+						"{Insert User ID}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CATEGORY - Add Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Doa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/addCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"addCategory"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CATEGORY - Get Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getCategory"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CATEGORY - Get Category By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getCategory/{Insert-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getCategory",
+						"{Insert-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CATEGORY - Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Doa-doa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/updateCategory/{Insert-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateCategory",
+						"{Insert-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CATEGORY - Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deleteCategory/{Insert-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteCategory",
+						"{Insert-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "SURAH - Insert Surah",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ustadzID",
+							"value": "5cc9b457b3d80b1a3c6bf268",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "surah_name",
+							"value": "Al-Quraysh",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "juz",
+							"value": "30",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Al-Quraysh",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/insertSurah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertSurah"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "SURAH - Get Surah",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getSurah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getSurah"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "SURAH - Get Surah By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getSurah/5bddbd0b934929234cafbb96",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getSurah",
+						"5bddbd0b934929234cafbb96"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "SURAH - Update Surah",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "surah_name",
+							"value": "Al-fatihah",
+							"type": "text"
+						},
+						{
+							"key": "juz",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "blablabla",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/updateSurah/{insert-id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateSurah",
+						"{insert-id}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "SURAH - Delete Surah",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deleteSurah/5be98c76530f40236822f889",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteSurah",
+						"5be98c76530f40236822f889"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "AYAT - Insert Ayat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "surahID",
+							"value": "5cc9ba58e8759209dc4b36d3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "noAyat",
+							"value": "1 - 4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "suara",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "artiSuara",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "textArab",
+							"value": "belum ada",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "textArti",
+							"value": "belum ada",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/insertAyat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertAyat"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "AYAT - Get Surat Dan Ayatnya",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getAyat/{Insert-Surah-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getAyat",
+						"{Insert-Surah-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "AYAT - Delete Ayat",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deleteAyat/{insert-id-ayat}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteAyat",
+						"{insert-id-ayat}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Insert Ustadz",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Adi Hidayat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/insertUstadz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"insertUstadz"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Get Ustadz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getUstadz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getUstadz"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Get Ustadz By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/getUstadz/{Isert-id-ustadz}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"getUstadz",
+						"{Isert-id-ustadz}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Update Ustadz",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Yusuf Mansyur",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/updateUstadz/{Insert-ID-Ustadz}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"updateUstadz",
+						"{Insert-ID-Ustadz}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Upload Image Ustadz",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/uploadImageUstadz/{Insert-Ustadz-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"uploadImageUstadz",
+						"{Insert-Ustadz-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "USTADZ - Delete Ustadz",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deleteUstadz/{Insert-Ustadz-ID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deleteUstadz",
+						"{Insert-Ustadz-ID}"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
